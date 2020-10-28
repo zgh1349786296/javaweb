@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="webtext">
+    <output-path>$PROJECT_DIR$/out/artifacts/webtext</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="webtext/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="webtext" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,114 @@
+<!-- HTML5文档-->
+<!DOCTYPE html>
+<!-- 网页使用的语言 -->
+<html lang="zh-CN">
+<head>
+    <!-- 指定字符集 -->
+    <meta charset="utf-8">
+    <!-- 使用Edge最新的浏览器的渲染方式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport视口：网页可以根据设置的宽度自动进行适配，在浏览器的内部虚拟一个容器，容器的宽度与设备的宽度相同。
+    width: 默认宽度与设备的宽度相同
+    initial-scale: 初始的缩放比，为1:1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>新生注册</title>
+
+    <!-- 1. 导入CSS的全局样式 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 2. jQuery导入，建议使用1.9以上的版本 -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <!-- 3. 导入bootstrap的js文件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script language="JavaScript">
+        function success() {
+            if(window.confirm("注册成功！请登录！")){
+                window.open("login.html");
+            }
+        }
+    </script>
+</head>
+<style>
+    body{
+        background:url("css/img/3.jpg") no-repeat center;
+        background-size: 100%;
+    }
+    h1{
+        front-family:宋体;
+        front-size: 30px;
+        color: #1c1ebb;
+
+    }
+
+</style>
+<body>
+<div class="container">
+    <center><h1>新生注册</h1></center>
+    <form action="" method="post">
+
+        <table cellspacing="6" cellpadding="6" align="center">
+        <div class="form-group">
+            <label for="id">学号：</label>
+            <input type="text" class="form-control" id="id" name="id" placeholder="请输学号">
+        </div>
+
+        <div class="form-group">
+            <label for="name">姓名：</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="请输入姓名">
+        </div>
+
+        <div class="form-group">
+            <label for="age">年龄：</label>
+            <input type="text" class="form-control" id="age" name="age" placeholder="请输入年龄">
+        </div>
+
+        <div class="form-group">
+            <label >性别：</label>
+            <input type="radio" name="sex" value="男"checked/>男
+            <input type="radio" name="sex"  value="女"/>女
+        </div>
+
+        <div class="form-group">
+            <label >专业：</label>
+            <select name="zy"  class="form-control">
+                <option value="计算机" selected>计算机</option>
+                <option value="通信" selected>通信</option>
+                <option value="大数据" selected>大数据</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label >公寓：</label>
+            <input type="radio" name="address" value="学一"checked/>学一&nbsp&nbsp&nbsp&nbsp
+            <input type="radio" name="address"  value="学二"/>学二&nbsp&nbsp&nbsp&nbsp
+            <input type="radio" name="address"  value="学三"/>学三&nbsp&nbsp&nbsp&nbsp
+            <input type="radio" name="address"  value="学四"/>学四&nbsp&nbsp&nbsp&nbsp
+        </div>
+
+
+        <div class="form-group">
+            <label for="password">密码：</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码">
+        </div>
+        <div class="form-group" style="text-align: center">
+            <input class="btn btn-primary" type="submit" onclick="success()" value="提交" />
+            <input class="btn btn-primary" type="reset" value="重置" />
+            <input class="btn btn-primary" type="button" onclick="jump()" value="返回" />
+        </div>
+        </table>
+
+    </form>
+    <script>
+        function jump(){
+            if(window.confirm("是否返回登录界面")){
+                window.history.back();
+            }
+
+
+
+        }
+    </script>
+
+</div>
+</body>
+</html>
