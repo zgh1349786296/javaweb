@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        html{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background:url("/img/background.jpg") no-repeat center;
+            background-size: 100%;
+        }
+        h1{
+            position: absolute;
+            left: 50%;
+            width: 200px;
+            height: 50px;
+            margin-left: -100px;
+            top: 14%;
+            color: #1c8adb;
+            font-size: 30px;
+            text-align: center;
+            line-height: 50px;
+            letter-spacing: 4px;
+        }
+        .ly_form{
+            width: 150px;
+            box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+            background: #fff;
+            padding: 150px;
+            margin: 4.5% auto 0;
+            text-align: center;
+            border-radius: 25px;
+        }
+        .ly_input{
+            position: absolute;
+            border: none;
+            width: 380px;
+            height: 50px;
+            margin-left: -200px;
+            background-color: #4fa2a4;
+            left: 50%;
+            color: white;
+            border-radius: 25px;
+            font-size: larger;
+            padding-left: 20px;
+        }
+        .ly_input2{
+            height: 70px;
+        }
+        .style_btn{
+            text-decoration: none;
+            width: 155px;
+            height: 50px;
+            position: absolute;
+            margin-left: -75px;
+            margin-top: 25px;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            border-radius: 25px;
+            background-color: #69afbb;
+            font-size: 30px;
+            border: #69afbb;
+        }
+    </style>
+</head>
+<body>
+<div class="ly_form">
+    <h1>LOGIN</h1>
+    <form action="loginServlet" method="post">
+        <div class="ly_input2">
+            <label>
+                <input class="ly_input" type="text" name="username" id="t_stuid" placeholder="STUID">
+            </label>
+        </div>
+        <br>
+        <div class="ly_input2">
+            <label>
+                <input class="ly_input" type="password" name="password" id="t_password" placeholder="PASSWORD">
+            </label>
+        </div>
+        <button class="style_btn">SUBMIT</button>
+    </form>
+</div>
+</body>
+</html>
